@@ -1,0 +1,5 @@
+{{- $scratch := newScratch }}
+
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
+{{- end }}
